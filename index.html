@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/screen.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="script/app.js"></script>
+</head>
+<body>
+
+<div class="c-app">
+    
+    <div class="c-app__beer-bottle">
+        <img class="c-image" src="./images/bottle.png">
+    </div>
+
+    <p class="c-tagline"></p>
+
+    <h1 class="c-title"></h1>
+    <p class="c-description"></p>
+  
+     <div class="c-app__beer-like">
+        <ion-icon name="heart" class="c-heart-icon">
+            <div class="c-heart-red-bg"></div>
+          </ion-icon>
+          <p class="c-like-value" id="js-like-value">22</p>
+     </div>
+
+    <div class="c-app__beer-information">
+        <h2 class="c-beer-subtitle">Details</h2>
+        <div class="c-first-brewed">
+               <span class="c-beer-information-title">First brewed</span>
+                <span class="c-first-brewed-value c-value"></span>
+        </div>
+        <div class="c-constributed-by">
+            <span class="c-beer-information-title">Constributed by</span>
+            <span class="c-constributed-by-value c-value"></span>
+        </div>
+        <div class="c-alcohol-by-volume">
+            <span class="c-beer-information-title">Alcohol by volume</span>
+            <span class="c-alcohol-by-volume-value c-value"></span>
+        </div>
+        <div class="c-ph">
+            <span class="c-beer-information-title">PH</span>
+            <span class="c-ph-value c-value"></span>
+        </div>
+    </div>
+    <div class="c-app__beer-graph">
+        <h2 class="c-beer-subtitle">Bitterness & Color Level</h2>
+        <canvas id="js-graph" class="c-graph"></canvas>
+    </div>
+
+    <button class="c-app__beer-refresh-mobile js-refresh-mobile">
+        <ion-icon name="refresh" class="c-refresh-icon">
+          </ion-icon>
+    </button>
+
+    <button class="c-app__beer-refresh js-refresh">
+        Reload
+    </button>
+    
+</div>
+
+</body>
+</html>
